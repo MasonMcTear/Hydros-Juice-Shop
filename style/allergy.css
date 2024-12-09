@@ -1,0 +1,80 @@
+main {
+  padding-bottom: 10%;
+}
+
+main > h1 {
+  text-align: center;
+  padding-top: 3%;
+}
+
+.infinity{
+  padding-bottom: 2%;
+}
+main > video{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid #ff5f1f;
+  border-style: outset;
+  overflow-x: auto;
+  border-spacing: 0;
+}
+
+table > thead > tr > th {
+  text-size-adjust: 200%;
+  font-size: x-large;
+  font-weight: bolder;
+  border-bottom: 3px solid black;
+}
+
+table > tbody > tr > td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-size-adjust: 200%;
+  font-size: large;
+}
+tr:nth-child(even) {
+  background-color: #e5e3e3;
+}
+td:nth-child(1) {
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+td:nth-child(2) {
+  padding: 0.5rem;
+}
+
+
+th {
+  background-color: #72d3fc;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+}
+
+@media (max-width: 768px){
+    table{
+      width: 100%;
+      font-size: smaller;
+    }
+
+    table > thead > tr > th{
+      font-size: smaller;
+    }
+
+    table > tbody > tr > td{
+      font-size: smaller;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    main video{
+      width: 60%;
+    }
+   
+}

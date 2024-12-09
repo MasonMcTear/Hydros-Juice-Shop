@@ -1,0 +1,234 @@
+* {
+  box-sizing: border-box;
+  font-family: "Oxanium", sans-serif;
+}
+
+body {
+  font-family: "Oxanium", sans-serif;
+  background-color: black;
+  margin: 1rem;
+  display: block;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 75px;
+}
+main {
+  background-color: #f2f2f2;
+  border-radius: 10px 10px 0 0;
+  margin-top: 10%;
+}
+nav {
+  top: 0;
+  left: 2.5%;
+  width: 95%;
+  position: fixed;
+  height: 70px;
+  padding-left: 0.5rem;
+  background-color: #72d3fc;
+  border:  solid #ff5f1f;
+  z-index: 1;
+}
+#logo{
+  display: block;
+  float: left;
+}
+#logo img{
+  height: 64px;
+}
+.toggle, [id="drop"]{
+  display: none;
+  
+}
+
+nav ul{
+  list-style: none;
+  float: right;
+  vertical-align: middle; 
+}
+
+nav ul li{
+  background-color: #ff5f1f;
+  padding: 0.3rem;
+  border-radius: 5px;
+  box-shadow: 2px 2px black inset;
+ 
+  float: left;
+  margin-right: 2rem;
+  
+}
+nav a{
+  text-decoration: none;
+  color: black;
+  -webkit-transition: color 0.4s ease-in;
+  -moz-transition: color 0.4s ease-in;
+  -o-transition: color 0.4s ease-in;
+  transition: 0.4s;
+  
+}
+
+nav a:hover{
+    text-size-adjust: 40%;
+    color: white;
+}
+.homerSimpsonItatchiUchihaAiEdit{
+  display: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+div.footerlink {
+  background-color: grey;
+  background-size: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+}
+footer > .footerlink > .column_v {
+  float: right;
+}
+footer > div.footerlink > div.column_v > ul {
+  list-style: none;
+}
+footer > div.footerlink > div.column_v > ul > li {
+  padding-top: 0.5rem;
+}
+footer > div.footerlink > div.column_v > ul > li.bigOne {
+  text-align: center;
+}
+
+footer > div.footerlink > div.column_v > ul > li > a {
+  -webkit-transition: color 0.4s ease-in;
+  -moz-transition: color 0.4s ease-in;
+  -o-transition: color 0.4s ease-in;
+  transition: 0.4s;
+  text-decoration: none;
+  color: black;
+  padding-top: 1rem;
+}
+
+footer > div.footerlink > div.column_v > ul > li > a:hover {
+  color: white;
+}
+
+footer > div.footerlink > div.column_h {
+  width: 50%;
+}
+footer > div.footerlink > div.column_h > ul {
+  padding-top: 40px;
+  vertical-align: middle;
+  justify-content: space-around;
+  list-style: none;
+  display: flex;
+}
+footer > div.footerlink > div.column_h > ul > li > a > img {
+  width: 200%;
+  padding: 20%;
+}
+footer > div.footerlink > div.column_h > ul > li > a:hover > img {
+  background-color: white;
+  -webkit-transition: 0.85s;
+  transition: 0.85s;
+  border-radius: 50%;
+  background-color: #72d3fc;
+}
+
+.footerlegal {
+  padding: 1rem;
+  width: auto;
+  background-color: black;
+  color: white;
+}
+.column_L {
+  float: left;
+}
+.column_R {
+  float: right;
+}
+/* SmartPhone */
+@media (max-width: 768px){
+  /* Nav Bar */
+  #logo{
+    display: none;
+  }
+  nav img{
+    padding-left: 0.5rem;
+  }
+  nav{
+    width: 100%;
+    left: 0;
+    padding: 0;
+    height:fit-content;
+    border:  2px solid #ff5f1f;
+  }
+  nav img{
+    margin-top: 0.5rem;
+  }
+  nav ul{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin-top: 0;
+  }
+  nav ul li{
+    display: block;
+    width: 99%;
+    margin-left: 0.5%;
+    border-radius: 0;
+    margin-top: 1rem;
+    box-shadow: none;
+    border: 1px solid black;
+  }
+  .toggle + a, .menu{
+    display: none;
+  }
+  .toggle{
+    display: block;
+    cursor: pointer;
+  }
+
+  [id^=drop]:checked + ul, .homerSimpsonItatchiUchihaAiEdit{
+    display: block;
+  }
+  
+  /* Body */
+  body{
+    width: 100%;
+  }
+  
+  footer .column_h ul{
+    padding: 0;
+  }
+  footer .footerlink{
+    padding-left: 0;
+  }
+  footer > div.footerlink > div.column_h > ul > li > a > img {
+    width: 150%;
+    padding: 10%;
+  }
+  .column_L {
+    float: none;
+    text-align: center;
+  }
+  .column_R {
+    float: none;
+    text-align: center;
+  }
+}
+
+/* Tablet */
+@media (max-width: 1024px){
+  body{
+    width: 100%;
+  }
+  nav{
+    width: 100%;
+    left: 0;
+  }
+}

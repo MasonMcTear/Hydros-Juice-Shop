@@ -1,0 +1,38 @@
+main > div > img{
+    
+    width: 40%;
+    display: block;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+   
+   box-shadow: 20px 20px 10px grey;
+}
+h1{
+    color: #f2f2f2;
+}
+h2{
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+form{
+    text-align: center;
+    padding-bottom: 2%;
+}
+textarea{
+    resize: none;
+    margin-bottom: 1rem;
+}
+select{
+    margin-bottom: 1rem;
+}
+
+.grouper{
+    padding-top:1rem;
+}
+
+option{
+    text-align: center;
+}

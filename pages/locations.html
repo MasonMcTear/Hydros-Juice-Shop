@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Google Font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap");
+    </style>
+
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/franchise.css" />
+    <link rel="icon" href="../media/hydroo.png">
+    <title>Franchise</title>
+  </head>
+  <body>
+    <nav>
+      <div id="logo"><a href="../index.html"><img src="../media/logo/logo_h.jpeg" alt="Logo"></a></div>
+      <label for="drop" class="toggle"><img src="../media/icon/icon2.png" alt="menu"></label>
+      <input type="checkbox" id="drop">
+      <ul class="menu">
+        <li class="homerSimpsonItatchiUchihaAiEdit"><a href="../index.html">Home</a></li>
+        <li><a href="history.html">Hydro's History</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="allergy.html">Allergy Information</a></li>
+        <li><a href="locations.html">Franchise</a></li>
+      </ul>
+  </nav>
+
+
+    <main>
+      <h1>Only way</h1>
+      <div><img src="../media/locations/locations.gif" alt="Store Locations GIF" /></div>
+        
+        <p></p>
+      <h2>Join our ranks! Apply now and get access to your own Hydro's!</h2>
+
+      <form action="/somewhere.php" method="get">
+       <div class="grouper">
+        <!-- Q 1-->
+        <label for="fname">First name *</label>
+        <input type="text" id="fname" name="fname" required />
+        <br><br>
+        <!-- Q 2-->
+        <label for="lname">Last name *</label>
+        <input type="text" id="lname" name="lname" required />
+      </div>
+        
+        <br>
+        <!-- Q 3-->
+        <label for="reason">Why do you seek to expand our influence?</label>
+        <br>
+        <textarea name="reason" id="reason" rows="2" cols="30"></textarea>
+        <br>
+        <!-- Q 4-->
+        <label for="sacrifice">Have you bled for something greater before?*</label>
+        <br>
+        <select id="sacrifice" name="bled" required>
+          <option value="" disabled selected>?</option>
+          <option value="sacrifice">Yes, I have.</option>
+          <option value="no">No, but I am willing.</option>
+        </select>
+        <br>
+         <!-- Q 5-->
+        <label for="truth">Are you ready to unveil the truths we hide?*</label>
+        <br>
+        <select id="truth" name="third" required>
+          <option value="" disabled selected>?</option>
+          <option value="yes">Yes, the veil shall be lifted.</option>
+          <option value="no">No, I fear what lies beyond.</option>
+        </select>
+        <br>
+        <!-- Q 6-->
+        <label for="expendable">What part of yourself do you consider expendable?*</label>
+        <br>
+        <textarea id="expendable" name="expendable" rows="3" required></textarea>
+        <br>
+        <button type="submit">Submit Your Application!</button>
+      </form>
+    </main>
+
+    <footer>
+      <div class="footerlink">
+        <div class="column_h">
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/"
+                ><img src="../media/socials/facebook.png" alt="facebook link"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/?hl=en"
+                ><img src="../media/socials/instagram.png" alt="instagram link"
+              /></a>
+            </li>
+            <li>
+              <a href="https://x.com/?lang=en"
+                ><img src="../media/socials/twitter.png" alt="twitter link"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto:hydrossupport@gmail.com"
+                ><img src="../media/socials/email.png" alt="email"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="column_v">
+          <ul>
+            <li class="bigOne">Links</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="history.html">Hydro's History</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="allergy.html">Allergy Information</a></li>
+            <li><a href="locations.html">Franchise</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footerlegal">
+        <div class="column_L">
+          <p>&copy;2025,Hydro's Juice Shop.All rights reserved</p>
+        </div>
+        <div class="column_R">
+          <p>Privacy Policy | Accessibility | Terms of Use</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

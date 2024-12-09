@@ -1,0 +1,117 @@
+main{
+    padding-bottom: 1rem;
+}
+
+.timeline{
+    margin: 0 auto;
+    max-width: 850px;  
+    padding: 25px;
+    display: grid;
+    font-family: sans-serif;
+    grid-template-columns: 1fr 3px 1fr;
+    
+}   
+
+.timeline__component{
+    margin: 0 20px 20px 20px;
+}
+
+.timeline__component--bg{
+    padding: 1.5em;
+    background: #72D3FC;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.timeline__component--bottom{
+    margin-bottom: 0;
+}
+
+
+.timeline__date--right{
+    text-align: right;
+}
+
+.timeline__middle{
+    position: relative;
+    background: #333333;
+}
+
+.timeline__point{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #333333;
+    border-radius: 50%;
+}
+.timeline__point_end{
+    position: absolute;
+    top: 0;
+    margin-left: 25rem;
+    transform: translateX(-50%);
+    width: 15px;
+    height: 15px;
+    background: #333333;
+    border-radius: 50%;
+}
+
+.timeline__point--bottom{
+    top: initial;
+    bottom: 0;
+    
+}
+
+.timeline__title{
+    margin: 0;
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.timeline__paragraph{
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.postmortem{
+    display: none;
+}
+@media (max-width: 768px){
+    .timeline{
+        display: none;
+    }
+    .postmortem{
+        display: block;
+    }
+
+    .event{
+        font-size: smaller;
+        display: flex;
+        flex-direction: column;
+        background-color: #72D3FC;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-left: 5%;
+        border-radius: 15px;
+        width: 90%;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px #ff5f1f;
+        margin-bottom: 1rem;
+    }
+    .title{
+        float: left;
+        margin-bottom: 0;
+        width: 100%;
+    }
+    .date{
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+        float: left;
+    }
+    
+    h3{
+        margin: 0;
+        color: #f3f3f3;
+    }
+}
